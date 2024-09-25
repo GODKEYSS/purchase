@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra B1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="top" style="height: 30px; line-height: 30px;">
+            <a class="anchor" href="">Trang chủ </a> &gt; <a class="anchor" href="">Gia dụng</a> &gt; <a class="anchor"
+                href="">Đồ
+                dùng nhà bếp
+            </a> &gt; <a class="anchor" href=""> Các loại
+                máy làm bánh
+            </a> &gt; <a class="anchor" href="">Máy nướng bánh </a>
+        </div>
+
+        <div class="main">
+            <div class="left">
+                <img src="https://www.electrolux.vn/globalassets/d2c-vn/toasters/vn-e2ts1-100w-1500x1500.png?width=464"
+                    alt="">
+            </div>
+
+            <div class="right">
+                <h1>Máy nướng bánh mì E2TS1-100W</h1>
+                <div style="color:#f7d14f; display: inline-block;">★★★★☆</div>
+                <div style="color:#011e41; display: inline-block; font-size: 20px;">4.0 (1798 đánh giá) </div>
+                <div class="price">
+                    <p style="text-decoration: line-through; color:#929fae ;">790.000₫</p>
+                    <p style="font-size: 30px; color:#011e41"> 610.000₫</p>
+                    <p style="color:#df2523">Tiết kiệm 180.000 ₫</p>
+                </div>
+                <ul class="description">
+                    <li>7 chế độ điều chỉnh độ giòn phù hợp nhu cầu.</li>
+                    <li>Giá hâm nóng các loại bánh nướng.</li>
+                    <li>Dây diện được giấu gọn bên dưới máy</li>
+                </ul>
+                <div class="delivery">
+                    <p>🛻 Vận chuyển : Hỗ trợ phí ship 30.000đ</p>
+                    <div><a style="display: inline-block; color: #e26475;" href="">Chọn địa điểm giao hàng</a>
+                        <p style="display:inline-block"> để dự báo thời gian giao hàng chính xác</p>
+                    </div>
+                </div>
+                <div class="color">
+                    <div style="display: inline-block;"><b>Màu sắc:</b></div>
+                    <div style="display: inline-block;">
+                        <p>trắng</p>
+                    </div>
+
+                </div>
+
+                <div class="sub-img">
+                    <img src="https://www.electrolux.vn/globalassets/d2c-vn/toasters/vn-e2ts1-100w-1500x1500.png?width=100"
+                        alt="">
+                </div>
+                <div class="quantity">
+                    <button onclick="increase()">
+                        +
+                    </button>
+                    <input type="number" id="products" value="1">
+                    <button onclick="decrease()">
+                        -
+                    </button>
+                </div>
+                <div class="purchase">
+                    <button class="sell">
+                        MUA NGAY
+                    </button>
+                    <button class="store">
+                        THÊM VÀO GIỎ HÀNG   
+                    </button>
+                </div>
+            
+
+
+        </div>
+    </div>
+    <div class="bottom"  style="background-color: #fff;">
+        <table class="product-info">
+            <thead>
+                <tr>
+                    <th colspan="2">THÔNG TIN CHUNG</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class = "row">Hotline:</td>
+                    <td>0971077169</td>
+                </tr>
+                <tr>
+                    <td class = "row">Thương hiệu:</td>
+                    <td>Electrolux</td>
+                </tr>
+                <tr>
+                    <td class = "row">Xuất xứ:</td>
+                    <td>Trung Quốc</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   
+</div>
+
+    <script>
+        let count = 0; 
+function increase(){
+    count++;
+    document.getElementById('products').value = count
+}
+
+function decrease(){
+    if(count > 0){
+        count--;
+        document.getElementById('products').value = count;
+    }
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+/* common */
+body {
+    margin: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* header */
+header {
+    display: flex;
+    gap: 10px;
+    height: calc(40vh - 1px);
+}
+header .left {
+    height: calc(100%-100px);
+    padding: 50px;
+    background-color: rgb(0, 166, 255);
+    background-size: contain;
+}
+header .left .logo {
+    height: 100%;
+}
+
+header .name {
+    display: flex;
+    width: 100%;
+    background-color: #ccc;
+}
+
+header .name .text {
+    width: 100%;
+    line-height: 45px;
+    text-align: end;
+    text-transform: uppercase;
+    align-self: flex-end;
+    font-size: 35px;
+    position: relative;
+    margin-right: 50px;
+    color: #4f4e4e;
+}
+
+header .name .text::after {
+    content: "";
+    height: 20px;
+    width:40px;
+    background-color: orange;
+    position: absolute;
+    bottom: 11px;
+    right: -50px;
+
+}
+
+/* main */
+main {
+    height: calc(35vh - 1px);
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+main .left {
+    padding-left: 20px;
+    padding-top: 60px;
+    width:80%;
+    background-color: #4f4e4e;
+}
+main .left .title {
+    font-size:45px;
+    color:white;
+    margin-bottom: 40px;
+
+}
+h5{
+
+    margin-top: 70px;
+    color: greenyellow;
+    font-size:25px;
+}
+h2{
+    color:white;
+    font-size:70px;
+    /* margin-bottom: 20px; */
+}
+.right{
+    width:20%;
+    background-color:rgb(249, 91, 0);
+}
+/* footer */
+footer {
+    display: block;
+    background-image: url("./img/cỏ.png") ;
+    height: calc(25vh - 1px);
+    background-color:green;
+    background-size: contain;
+    margin-top: 10px;
+    text-align: end;
+    padding-right: 40px;
+}
+footer p{
+    font-size: 30px;
+    color:red;
+    text-shadow: rgb(255, 255, 255) 3px 0px 0px, rgb(255, 255, 255) 2.83487px 0.981584px 0px, rgb(255, 255, 255) 2.35766px 1.85511px 0px, rgb(255, 255, 255) 1.62091px 2.52441px 0px, rgb(255, 255, 255) 0.705713px 2.91581px 0px, rgb(255, 255, 255) -0.287171px 2.98622px 0px, rgb(255, 255, 255) -1.24844px 2.72789px 0px, rgb(255, 255, 255) -2.07227px 2.16926px 0px, rgb(255, 255, 255) -2.66798px 1.37182px 0px, rgb(255, 255, 255) -2.96998px 0.42336px 0px, rgb(255, 255, 255) -2.94502px -0.571704px 0px, rgb(255, 255, 255) -2.59586px -1.50383px 0px, rgb(255, 255, 255) -1.96093px -2.27041px 0px, rgb(255, 255, 255) -1.11013px -2.78704px 0px, rgb(255, 255, 255) -0.137119px -2.99686px 0px, rgb(255, 255, 255) 0.850987px -2.87677px 0px, rgb(255, 255, 255) 1.74541px -2.43999px 0px, rgb(255, 255, 255) 2.44769px -1.73459px 0px, rgb(255, 255, 255) 2.88051px -0.838247px 0px;
+}
+footer .name {
+    padding-top: 30px;
+}

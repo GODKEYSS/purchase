@@ -58,6 +58,19 @@ for(const item of Subject){
 
 selectCheckLogin.innerHTML = otionCheckLogin;
 
+let register = document.getElementsByClassName('registration')[0].addEventListener("click",function(){
+
+    let firstName = document.getElementsByClassName("first-name")[0].value;
+    let lastName = document.getElementsByClassName("last-name")[0].value;
+    let fullName = firstName + "" + lastName
+    let birthDay = document.getElementById('select-day').value
+    let birthMonth = document.getElementById('select-month').value
+    let birthYear = document.getElementById('select-year').value
+    let fullBirthDate = birthDay + "-" + birthMonth + "-" + birthYear;
+    let sex = document.querySelector("input[name = sex]:checked").value;
+    let fullIntroduction = fullName + " " + fullBirthDate + " " + sex;
+    alert(`Xin chào ${fullIntroduction}, đã đăng ký thành công`)
+})
 
 
 
